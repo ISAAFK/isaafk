@@ -1,0 +1,220 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+IS:wght@100..400&family=Playwrite+NZ:wght@296&display=swap');
+
+
+body {
+    font-family: "Playwrite IS", cursive;
+    background: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)), url('fondo.webjfif.jfif');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0; 
+}
+
+
+#seleccionar-mascota {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    margin-top: 20px;
+}
+
+
+.titulo {
+    margin-bottom: 20px;
+    height: 100px;
+    width: 305px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    padding: 4px;
+    display: flex;
+    border-radius: 30px;
+    background-color: #3b52a1c4;
+    background-image: linear-gradient(15deg, #7a79b114, #402e7a);
+    color: #4C3BCF;
+    font-size: 32px;
+} 
+.subtitulo {
+    font-size: 20px;
+    color:#402E7A;
+    margin: 0;
+}
+
+.tarjetas,
+.tarjetas-ataques {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.tarjeta-de-mokepon {
+    width: 250px;
+    height: 100px;
+    background-color:#4B70F5;
+    color: #402E7A;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+} 
+.tarjeta-de-mokepon:hover {
+    background-color :#4b70f560;
+    
+}
+#seleccionar-mascota {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.subtitulo {
+    color: #ebebeb;
+    font-size: 20px;
+}
+
+.tarjetas,
+.tarjetas-ataques {
+    display: flex;
+    gap: 10px;
+}
+
+.tarjeta-de-mokepon {
+    width: 205px;
+    height: 110px;
+    background: #7b79c39c;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(3, 2, 56);
+    justify-content: space-around;
+}
+
+input:checked + label {
+    background-color: #3b52a1c4;
+    background-image: linear-gradient(15deg, #7a79b114, #402e7a);
+    border-radius: 8px;
+    color: #fff;
+    display: flex;
+    font-size: 18px;
+    padding: 4px;
+    cursor: pointer;
+    transition: .5s;
+    height: 110px;
+    width: 225px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.tarjeta-de-mokepon img {
+    width: 80px;
+}
+
+#boton-mascota {
+    width: 180px;
+    height: 40px;
+    border-radius: 15px;
+    background: 0 0;
+    border: 7px solid #865dff85;
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 30px;
+}
+#boton-mascota:hover {
+    border: 7px solid #7344ffe8;
+    color: #ffffff;
+}
+
+input {
+    display: none;
+}
+
+#seleccionar-ataque {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.boton-de-ataque {
+    border: 7px solid #865dffa6;
+    background-color: transparent;
+    font-size: 20px;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    width: 180px;
+    color: #ffff;
+    font-family: 'Poppins', sans-serif;
+}
+.boton-de-ataque:hover {
+    border: 7px solid #5e29fc;
+}
+
+
+#mensajes {
+    width: 220px;
+    background: #eee;
+    background-color:rgba(97, 94, 252, 0) ;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#boton-reiniciar {
+    height: 40px;
+    width: 130px;
+    border-radius: 20px;
+    color: #ffffff;
+    border: 5px solid #03020645;
+    background-color: #5241e38f;
+    font-family: 'Poppins', sans-serif;
+}
+#boton-reiniciar:hover {
+    border: 6px solid #865dffa6;
+    background-color: #5141e3;
+}
+
+.ataques {
+    display: grid;
+    grid-template-columns: 100px 100px;
+    color: #eaeaea;
+}
+
+#vidas-jugador,
+#vidas-enemigo {
+    font-size: 32px;
+    margin-bottom: 0;
+}
+
+.ataques-jugador,
+.ataques-enemigo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (max-width: 500px) {
+    .tarjetas, 
+    .tarjetas-ataques {
+    color: #4C3BCF;
+    flex-direction: column;
+}
+}
